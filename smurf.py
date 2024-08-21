@@ -8,6 +8,10 @@ def get_user_choice():
         user_choice = input("Välj 1, 2 eller 3: ").lower()
     return user_choice
 
+def get_computer_choice():
+    choices = ['1', '2', '3']
+    return random.choice(choices)
+
 def play_game():
     user_choice = get_user_choice()
     computer_choice = get_computer_choice()
@@ -20,3 +24,4 @@ def play_game():
 
 if __name__ == "__main__":
     play_game()
+
